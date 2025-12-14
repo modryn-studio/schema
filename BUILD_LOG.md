@@ -1,6 +1,6 @@
-# Schema - Build Log
+# SpecifyThat - Build Log
 
-**Project**: Schema (Conversational Spec Generator)  
+**Project**: SpecifyThat (Conversational Spec Generator)  
 **Start Time**: 3:20 PM, December 13, 2025  
 **Target Completion**: Within 48 hours (by 3:20 PM, December 15, 2025)  
 **Builder**: GitHub Copilot + Luke
@@ -61,8 +61,8 @@
 - All features working as expected
 
 **4:05 PM** - Deployed to Production 🚀
-- Committed and pushed to GitHub: https://github.com/modryn-studio/schema
-- Deployed to Vercel: https://schema-kappa.vercel.app/
+- Committed and pushed to GitHub: https://github.com/modryn-studio/specifythat
+- Deployed to Vercel: https://specifythat.vercel.app/
 - Environment variables configured
 - Live and fully functional!
 
@@ -73,8 +73,8 @@
 ## Progress Log
 
 ### Current Status: 🎉 LIVE IN PRODUCTION
-- **Live URL**: https://schema-kappa.vercel.app/
-- **GitHub**: https://github.com/modryn-studio/schema
+- **Live URL**: https://specifythat.vercel.app/
+- **GitHub**: https://github.com/modryn-studio/specifythat
 - **Time to Ship**: 45 minutes (well under 48-hour target)
 - All 11 phases completed
 - All success criteria met
@@ -117,5 +117,5 @@ _Will update with actual usage..._
 ## Notes
 
 - Following ROADMAP.md execution order
-- Respecting all constraints from schema-spec.md
+- Respecting all constraints from specifythat-spec.md
 - Target: Ship working product within 48 hours

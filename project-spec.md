@@ -1,4 +1,4 @@
-# Project Spec: Schema (Execution-First)
+# Project Spec: SpecifyThat (Execution-First)
 
 This is not a brainstorming doc. This is a **build contract**.
 
@@ -6,13 +6,13 @@ This is not a brainstorming doc. This is a **build contract**.
 
 ## 1. Project Title
 
-**Schema**
+**SpecifyThat**
 
 ------------------------------------------------------------------------
 
 ## 2. One-Paragraph Summary
 
-Schema is a conversational spec generator for developers who struggle to turn ideas into executable build instructions. It conducts a targeted interview, asking specific questions about the project. When users don't know an answer, Schema provides "top 0.1% thinking" to fill gaps. At the end, it outputs a clear, ChatGPT-style spec that can be implemented immediately. Success means a developer goes from vague idea to building in under 30 minutes.
+SpecifyThat is a conversational spec generator for developers who struggle to turn ideas into executable build instructions. It conducts a targeted interview, asking specific questions about the project. When users don't know an answer, SpecifyThat provides "top 0.1% thinking" to fill gaps. At the end, it outputs a clear, ChatGPT-style spec that can be implemented immediately. Success means a developer goes from vague idea to building in under 30 minutes.
 
 ------------------------------------------------------------------------
 
@@ -223,7 +223,7 @@ Short checklist for minimum quality standards.
 - [ ] Clean project structure (components, API routes, utils organized logically)
 - [ ] No unused code or commented-out blocks
 - [ ] Clear README with:
-  - What Schema does
+  - What SpecifyThat does
   - How to run it locally
   - How to deploy it
   - Environment variables needed (API key)

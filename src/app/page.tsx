@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -6,12 +7,13 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">S</span>
-            </div>
-            <span className="font-semibold text-gray-900">Schema</span>
-          </div>
+          <Image 
+            src="/specifythat-logo.png" 
+            alt="SpecifyThat" 
+            width={120} 
+            height={32}
+            className="h-8 w-auto"
+          />
         </div>
       </header>
 
@@ -25,7 +27,7 @@ export default function Home() {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              Stop staring at a blank page. Schema asks the right questions and fills gaps with top 0.1% thinking. Go from idea to building in under 30 minutes.
+              Stop staring at a blank page. SpecifyThat asks the right questions and fills gaps with top 0.1% thinking. Go from idea to building in under 30 minutes.
             </p>
           </div>
 
@@ -89,7 +91,7 @@ export default function Home() {
               Ready to stop overthinking?
             </h2>
             <p className="text-gray-400 mb-8 max-w-lg mx-auto">
-              Most developers spend hours planning before writing a single line of code. Schema gets you building in minutes.
+              Most developers spend hours planning before writing a single line of code. SpecifyThat gets you building in minutes.
             </p>
             <Link
               href="/interview"
@@ -105,7 +107,7 @@ export default function Home() {
       <footer className="border-t border-gray-200 mt-24">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <p className="text-center text-gray-500 text-sm">
-            Built with Schema • Open source on GitHub
+            Built with SpecifyThat • Open source on GitHub
           </p>
         </div>
       </footer>

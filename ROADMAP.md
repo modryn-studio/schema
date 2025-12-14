@@ -1,4 +1,4 @@
-# Schema - Build Roadmap
+# SpecifyThat - Build Roadmap
 
 **Status**: Pre-Build Planning  
 **Timeline**: 48 hours max  
@@ -20,7 +20,7 @@
 ## File Structure
 
 ```
-schema/
+specifythat/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx                 # Root layout
@@ -192,8 +192,8 @@ schema/
 
 **Commands**:
 ```bash
-npx create-next-app@latest schema --typescript --tailwind --app
-cd schema
+npx create-next-app@latest specifythat --typescript --tailwind --app
+cd specifythat
 npm install @anthropic-ai/sdk
 ```
 
@@ -263,7 +263,7 @@ npm install @anthropic-ai/sdk
 ### Phase 7: Spec Generation Logic (2 hours)
 - [ ] Create `lib/specTemplate.ts`
 - [ ] Write template function that maps answers to sections
-- [ ] Format as markdown matching schema-spec.md structure
+- [ ] Format as markdown matching specifythat-spec.md structure
 - [ ] Handle optional sections gracefully
 - [ ] Test with sample answers
 
@@ -326,7 +326,7 @@ Before marking as "complete":
 - [ ] "I don't know" triggers AI generation (tested on 3+ questions)
 - [ ] AI-generated answers are reasonable and context-aware
 - [ ] Complete interview generates proper spec
-- [ ] Spec follows exact structure of schema-spec.md (sections 1-13)
+- [ ] Spec follows exact structure of specifythat-spec.md (sections 1-13)
 - [ ] Copy button works reliably
 - [ ] Works on mobile (iPhone Safari, Android Chrome)
 - [ ] Deployed on Vercel with working URL

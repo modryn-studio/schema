@@ -1,4 +1,4 @@
-// TypeScript interfaces for Schema
+// TypeScript interfaces for SpecifyThat
 
 export interface Answer {
   question: string;

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Schema - Conversational Spec Generator",
-  description: "Turn your project idea into a build-ready spec in under 30 minutes. Schema asks the right questions and fills gaps with top 0.1% thinking.",
+  title: "SpecifyThat - Conversational Spec Generator",
+  description: "Turn your project idea into a build-ready spec in under 30 minutes. SpecifyThat asks the right questions and fills gaps with top 0.1% thinking.",
 };
 
 export default function RootLayout({

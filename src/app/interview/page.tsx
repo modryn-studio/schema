@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useInterviewSession } from '@/hooks/useInterviewSession';
 import { QuestionCard } from '@/components/QuestionCard';
 import { AnswerInput } from '@/components/AnswerInput';
@@ -101,7 +102,7 @@ export default function InterviewPage() {
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-lg">S</span>
                 </div>
-                <span className="font-semibold text-gray-900">Schema</span>
+                <span className="font-semibold text-gray-900">SpecifyThat</span>
               </Link>
             </div>
           </div>
@@ -120,12 +121,13 @@ export default function InterviewPage() {
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
           <div className="max-w-4xl mx-auto px-4 py-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
-              <span className="font-semibold text-gray-900">Schema</span>
-            </div>
+            <Image 
+              src="/specifythat-logo.png" 
+              alt="SpecifyThat" 
+              width={120} 
+              height={32}
+              className="h-8 w-auto"
+            />
           </div>
         </header>
 
@@ -142,14 +144,15 @@ export default function InterviewPage() {
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
           <div className="max-w-4xl mx-auto px-4 py-4">
-            <div className="flex items-center gap-2">
-              <Link href="/" className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">S</span>
-                </div>
-                <span className="font-semibold text-gray-900">Schema</span>
-              </Link>
-            </div>
+            <Link href="/">
+              <Image 
+                src="/specifythat-logo.png" 
+                alt="SpecifyThat" 
+                width={120} 
+                height={32}
+                className="h-8 w-auto"
+              />
+            </Link>
           </div>
         </header>
 
@@ -199,11 +202,14 @@ export default function InterviewPage() {
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
-              <span className="font-semibold text-gray-900">Schema</span>
+            <Link href="/">
+              <Image 
+                src="/specifythat-logo.png" 
+                alt="SpecifyThat" 
+                width={120} 
+                height={32}
+                className="h-8 w-auto"
+              />
             </Link>
             <button
               onClick={handleStartOver}

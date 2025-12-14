@@ -1,8 +1,10 @@
-# Schema
+<p align="left">
+  <img src="./public/specifythat-logo.png" height="36" />
+</p>
 
 **Turn ideas into build-ready specs in under 30 minutes.**
 
-Schema is a conversational spec generator for developers who struggle to turn ideas into executable build instructions. It conducts a targeted interview, asking specific questions about your project. When you don't know an answer, Schema provides "top 0.1% thinking" to fill gaps.
+SpecifyThat is a conversational spec generator for developers who struggle to turn ideas into executable build instructions. It conducts a targeted interview, asking specific questions about your project. When you don't know an answer, SpecifyThat provides "top 0.1% thinking" to fill gaps.
 
 ## Features
 
@@ -32,8 +34,8 @@ Schema is a conversational spec generator for developers who struggle to turn id
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/modryn-studio/schema.git
-   cd schema
+   git clone https://github.com/modryn-studio/specifythat.git
+   cd specifythat
    ```
 
 2. Install dependencies:
@@ -84,7 +86,7 @@ The app will be live at your Vercel URL.
 ## Project Structure
 
 ```
-schema/
+specifythat/
 ├── src/
 │   ├── app/
 │   │   ├── page.tsx              # Homepage
@@ -99,7 +101,7 @@ schema/
 ├── public/                       # Static assets
 ├── BUILD_LOG.md                  # Development log
 ├── ROADMAP.md                    # Feature roadmap
-├── schema-spec.md                # Spec template
+├── specifythat-spec.md           # Spec template
 └── README.md                     # This file
 ```
 
@@ -122,4 +124,4 @@ MIT
 
 ---
 
-Built with ❤️ using Schema's own spec format.
+Built with ❤️ using SpecifyThat's own spec format.
