@@ -241,6 +241,52 @@
 
 ---
 
+### Day 3 - December 15, 2025
+
+**Pre-Launch Requirements** 🚀
+
+**Enhancement 9: Email Capture** ✅
+- Created HeaderEmailCapture component with compact, header-friendly design
+- Integrated with Google Forms (entry.1826763262)
+- Features:
+  - Bell icon + "Get updates:" label (label hidden on mobile)
+  - Inline form in header (visible immediately on page load)
+  - Success state: "You're on the list!" with green styling
+  - Auto-resets after 3 seconds
+  - LocalStorage backup for all email signups
+  - Clean, non-intrusive design that stays visible as users scroll
+- Positioned in sticky header next to logo
+- Form validation with error states
+- Connected to luke@modrynstudio.com Google Form
+
+**Enhancement 10: Feedback Mechanism** ✅
+- Created FeedbackButton component as floating action button
+- Features:
+  - Fixed position bottom-right on all pages
+  - Modal form with textarea for feedback
+  - Direct FormSubmit.co integration (luke@modrynstudio.com)
+  - Mailto button as backup option
+  - Success state with CheckCircle2 Lucide icon
+  - LocalStorage backup for all feedback submissions
+  - Email includes: feedback text, page URL, timestamp, user agent
+- Added to homepage and interview page
+- FormSubmit activated and tested on live site
+- Emails successfully delivering to luke@modrynstudio.com
+
+**Technical Details:**
+- Replaced all emojis with Lucide React icons (PartyPopper, CheckCircle2, Bell)
+- Fixed FormSubmit success detection (was showing false error due to JSON parsing)
+- Created /api/send-feedback route (though direct client-side submission works better)
+- Added EMAIL_FEEDBACK_SETUP.md with complete setup documentation
+
+**Deployment Notes:**
+- FormSubmit blocks localhost requests (by design)
+- Tested successfully on production: specifythat.com
+- Activation link clicked, emails flowing properly
+- Both email capture and feedback fully operational
+
+---
+
 ## Notes
 
 - Following ROADMAP.md execution order

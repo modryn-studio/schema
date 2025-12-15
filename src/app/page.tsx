@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import EmailCapture from '@/components/EmailCapture';
+import HeaderEmailCapture from '@/components/HeaderEmailCapture';
 import FeedbackButton from '@/components/FeedbackButton';
 
 export default function Home() {
@@ -8,25 +8,23 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
       {/* Header */}
       <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-7">
-          <Image 
-            src="/specifythat-logo.png" 
-            alt="SpecifyThat" 
-            width={144} 
-            height={32}
-            style={{ height: '32px', width: 'auto' }}
-            priority
-          />
+        <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="flex items-center justify-between gap-4">
+            <Image 
+              src="/specifythat-logo.png" 
+              alt="SpecifyThat" 
+              width={144} 
+              height={32}
+              style={{ height: '32px', width: 'auto' }}
+              priority
+            />
+            <HeaderEmailCapture />
+          </div>
         </div>
       </header>
 
       {/* Hero Section */}
       <main className="max-w-5xl mx-auto px-4 py-20 md:py-32">
-        {/* Email Capture - Top of page */}
-        <div className="mb-16">
-          <EmailCapture />
-        </div>
-
         <div className="text-center space-y-10">
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#0A2540] tracking-tight leading-[1.15]">
