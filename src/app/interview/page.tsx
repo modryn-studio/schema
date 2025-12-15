@@ -12,6 +12,7 @@ import { AnalysisProgress } from '@/components/AnalysisProgress';
 import { SpecDisplay } from '@/components/SpecDisplay';
 import { UnitSelectionCard } from '@/components/UnitSelectionCard';
 import { IdeationFlow } from '@/components/IdeationFlow';
+import FeedbackButton from '@/components/FeedbackButton';
 import { Lightbulb } from 'lucide-react';
 
 export default function InterviewPage() {
@@ -487,6 +488,9 @@ export default function InterviewPage() {
           </>
         )}
       </main>
+
+      {/* Floating Feedback Button */}
+      <FeedbackButton />
     </div>
   );
 }

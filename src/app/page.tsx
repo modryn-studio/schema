@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import EmailCapture from '@/components/EmailCapture';
+import FeedbackButton from '@/components/FeedbackButton';
 
 export default function Home() {
   return (
@@ -103,6 +105,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
+        {/* Email Capture Section */}
+        <div className="mt-24 md:mt-32">
+          <EmailCapture />
+        </div>
       </main>
 
       {/* Footer */}
@@ -121,6 +128,9 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      {/* Floating Feedback Button */}
+      <FeedbackButton />
     </div>
   );
 }
