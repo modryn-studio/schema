@@ -109,7 +109,15 @@ export default function Home() {
       <footer className="border-t border-gray-200 mt-32">
         <div className="max-w-5xl mx-auto px-4 py-10">
           <p className="text-center text-gray-500 text-sm">
-            Built with SpecifyThat • Open source on GitHub
+            Built with SpecifyThat •{' '}
+            <a 
+              href="https://github.com/modryn-studio/specifythat" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-gray-700 underline"
+            >
+              Open source on GitHub
+            </a>
           </p>
         </div>
       </footer>

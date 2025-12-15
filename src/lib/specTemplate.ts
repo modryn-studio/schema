@@ -1,5 +1,6 @@
 import { Answer } from './types';
 import { questions } from './questions';
+import { sanitizeProjectName, sanitizeMarkdown } from './sanitize';
 
 interface SpecSection {
   title: string;
@@ -23,11 +24,12 @@ function getAnswerForSection(answers: Answer[], sectionNumber: number): string[]
 export function buildSpecFromAnswers(answers: Answer[]): string {
   const sections: SpecSection[] = [];
   
-  // Section 1: Project Title
+  // Section 1: Project Title (sanitized)
   const titleAnswers = getAnswerForSection(answers, 1);
+  const projectTitle = sanitizeProjectName(titleAnswers[0] || "Untitled Project");
   sections.push({
     title: "1. Project Title",
-    content: `**${titleAnswers[0] || "Untitled Project"}**`
+    content: `**${projectTitle}**`
   });
   
   // Section 2: One-Paragraph Summary

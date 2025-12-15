@@ -62,3 +62,17 @@ h1, h2, h3, h4, h5, h6 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+/* Pointer cursor for all clickable elements */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+a[href] {
+  cursor: pointer;
+}
+
+/* Not-allowed cursor for disabled elements */
+button:disabled,
+[role="button"][aria-disabled="true"],
+.disabled {
+  cursor: not-allowed;
+}

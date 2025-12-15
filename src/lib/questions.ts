@@ -8,15 +8,23 @@ export const questions: Question[] = [
     contextForAI: "Suggest a clear, memorable project name based on what the user wants to build. Keep it short (1-3 words), easy to spell, and memorable. Consider the project's core function when naming.",
     section: "Project Title",
     sectionNumber: 1,
+    validation: {
+      minLength: 2,
+      maxLength: 50,
+      sanitize: true,
+    },
   },
   
   // Section 2: One-Paragraph Summary
   {
     id: 2,
-    text: "Describe your project in 1-2 sentences. What does it do and who is it for?",
+    text: "Describe your project. What does it do and who is it for?",
     contextForAI: "Generate a concise summary that captures the project's core value proposition. Focus on: what problem it solves, who the target user is, and what makes it valuable. Keep it under 50 words.",
     section: "One-Paragraph Summary",
     sectionNumber: 2,
+    allowFileUpload: true,
+    fileTypes: ['.txt', '.md'],
+    helpText: "You can write as much or as little as you want. You can also attach a doc if you have one.",
   },
   
   // Section 3: Primary Goal

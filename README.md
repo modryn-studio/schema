@@ -1,5 +1,6 @@
 <p align="left">
-  <img src="./public/specifythat-logo.png" height="36" />
+  <img src="./public/specifythat-logo-black.png#gh-light-mode-only" height="36" />
+  <img src="./public/specifythat-logo-white.png#gh-dark-mode-only" height="36" />
 </p>
 
 **Turn ideas into build-ready specs in under 30 minutes.**
