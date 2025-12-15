@@ -8,7 +8,6 @@ import { useInterviewSession } from '@/hooks/useInterviewSession';
 import { QuestionCard } from '@/components/QuestionCard';
 import { AnswerInput } from '@/components/AnswerInput';
 import { ProgressBar } from '@/components/ProgressBar';
-import { LoadingScreen } from '@/components/LoadingSpinner';
 import { AnalysisProgress } from '@/components/AnalysisProgress';
 import { SpecDisplay } from '@/components/SpecDisplay';
 import { UnitSelectionCard } from '@/components/UnitSelectionCard';
@@ -324,6 +323,13 @@ export default function InterviewPage() {
 
   // Show loading screen while generating spec
   if (isGeneratingSpec) {
+    const specStages = [
+      { label: 'Analyzing your answers' },
+      { label: 'Structuring requirements' },
+      { label: 'Generating technical spec' },
+      { label: 'Finalizing document' },
+    ];
+
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
@@ -338,8 +344,16 @@ export default function InterviewPage() {
           </div>
         </header>
 
-        <main className="max-w-4xl mx-auto px-4 py-8">
-          <LoadingScreen message="Generating your spec... This may take a moment." />
+        <main className="max-w-4xl mx-auto px-4 py-16">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-[#0A2540] mb-2">Generating Your Spec</h2>
+            <p className="text-gray-600">This may take a moment...</p>
+          </div>
+          <AnalysisProgress 
+            isActive={isGeneratingSpec} 
+            title="Building Spec"
+            stages={specStages}
+          />
         </main>
       </div>
     );

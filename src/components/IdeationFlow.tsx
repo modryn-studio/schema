@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { IdeationAnswers } from '@/lib/types';
 import { validateMeaningfulInput } from '@/lib/sanitize';
+import { AnalysisProgress } from '@/components/AnalysisProgress';
 import { 
   Zap, 
   ShoppingCart, 
@@ -210,21 +211,24 @@ export function IdeationFlow({ onComplete, onCancel }: IdeationFlowProps) {
   const hasAnyAnswer = Object.values(answers).some(v => v) || currentInput.trim() || selectedCategory;
 
   if (isGenerating) {
+    const ideationStages = [
+      { label: 'Understanding your problem' },
+      { label: 'Analyzing target users' },
+      { label: 'Crafting project description' },
+    ];
+
     return (
       <div className="w-full max-w-2xl mx-auto">
         <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
-          <div className="flex flex-col items-center justify-center py-12">
-            <div className="relative">
-              <div className="w-16 h-16 border-4 border-blue-100 rounded-full" />
-              <div className="absolute inset-0 w-16 h-16 border-4 border-blue-500 rounded-full border-t-transparent animate-spin" />
-            </div>
-            <p className="mt-6 text-lg font-medium text-[#0A2540]">
-              Creating your project description...
-            </p>
-            <p className="mt-2 text-gray-500 text-center max-w-md">
-              Based on your answers, we&apos;re crafting a clear description for your project.
-            </p>
+          <div className="text-center mb-8">
+            <h2 className="text-xl font-bold text-[#0A2540] mb-2">Creating Your Project Description</h2>
+            <p className="text-gray-500">Based on your answers, we're crafting a clear description.</p>
           </div>
+          <AnalysisProgress 
+            isActive={isGenerating} 
+            title="Generating"
+            stages={ideationStages}
+          />
         </div>
       </div>
     );

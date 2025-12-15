@@ -15,12 +15,3 @@ export function LoadingSpinner({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
     </div>
   );
 }
-
-export function LoadingScreen({ message = 'Loading...' }: { message?: string }) {
-  return (
-    <div className="min-h-[60vh] flex flex-col items-center justify-center gap-6">
-      <LoadingSpinner size="lg" />
-      <p className="text-gray-600 text-lg font-medium animate-pulse">{message}</p>
-    </div>
-  );
-}

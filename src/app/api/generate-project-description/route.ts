@@ -20,22 +20,20 @@ function buildIdeationPrompt(answers: IdeationAnswers): string {
 
   return `You are a product design expert helping someone crystallize their project idea into a clear description.
 
-Based on the discovery answers below, generate a concise, clear project description suitable for a software specification document.
+Based on the discovery answers below, generate a concise, clear project description suitable for a software specification document. Be creative and generous in your interpretation - even vague ideas can become software projects.
 
 <discovery_answers>
 ${parts.join('\n')}
 </discovery_answers>
 
-CRITICAL: If the answers appear to contain nonsense, gibberish, random characters, or are clearly not genuine responses, you MUST start your response with exactly "ERROR:" followed by a brief explanation of why you cannot generate a description.
-
-Requirements for valid descriptions:
+Requirements:
 1. Write 2-4 sentences that clearly describe what the project does and who it's for
-2. Be specific and actionable, not vague
+2. Make reasonable assumptions to fill gaps and create a coherent software project concept
 3. Focus on the core value proposition
 4. Avoid jargon or buzzwords
 5. Write in a direct, professional tone
 
-Format: Just output the project description, no preamble or explanation. Or if invalid input, output "ERROR: <reason>".`;
+Format: Just output the project description, no preamble or explanation.`;
 }
 
 export async function POST(request: Request) {
@@ -89,14 +87,6 @@ export async function POST(request: Request) {
     }
 
     const generatedText = textContent.text.trim();
-
-    // Check if Claude returned an error message
-    if (generatedText.startsWith('ERROR:')) {
-      return NextResponse.json(
-        { error: generatedText.replace('ERROR:', '').trim() },
-        { status: 400 }
-      );
-    }
 
     return NextResponse.json({
       projectDescription: generatedText,

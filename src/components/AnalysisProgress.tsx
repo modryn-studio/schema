@@ -2,18 +2,31 @@
 
 import { useState, useEffect } from 'react';
 
-interface AnalysisProgressProps {
-  isActive: boolean;
+interface Stage {
+  label: string;
+  duration?: number;
 }
 
-const stages = [
+interface AnalysisProgressProps {
+  isActive: boolean;
+  title?: string;
+  subtitle?: string;
+  stages?: Stage[];
+}
+
+const defaultStages: Stage[] = [
   { label: 'Reading your description', duration: 1500 },
   { label: 'Understanding project scope', duration: 2000 },
   { label: 'Identifying buildable units', duration: 2500 },
   { label: 'Preparing next steps', duration: 1500 },
 ];
 
-export function AnalysisProgress({ isActive }: AnalysisProgressProps) {
+export function AnalysisProgress({ 
+  isActive, 
+  title = 'Analyzing',
+  subtitle,
+  stages = defaultStages 
+}: AnalysisProgressProps) {
   const [currentStage, setCurrentStage] = useState(0);
   const [stageProgress, setStageProgress] = useState(0);
 
@@ -61,11 +74,15 @@ export function AnalysisProgress({ isActive }: AnalysisProgressProps) {
       {/* Main progress bar */}
       <div className="space-y-3">
         <div className="flex justify-between items-center">
-          <span className="text-sm font-bold text-[#0A2540]">Analyzing</span>
+          <span className="text-sm font-bold text-[#0A2540]">{title}</span>
           <span className="text-sm font-medium text-gray-500">
             {Math.round(overallProgress)}%
           </span>
         </div>
+        
+        {subtitle && (
+          <p className="text-sm text-gray-500 -mt-1">{subtitle}</p>
+        )}
         
         <div className="w-full bg-gray-100 rounded-full h-3 overflow-hidden shadow-inner">
           <div
