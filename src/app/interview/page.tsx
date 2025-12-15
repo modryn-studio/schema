@@ -165,15 +165,15 @@ export default function InterviewPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50/30">
         <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-          <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="max-w-5xl mx-auto px-4 py-7">
             <div className="flex items-center justify-between">
               <Link href="/">
                 <Image 
                   src="/specifythat-logo.png" 
                   alt="SpecifyThat" 
-                  width={160} 
-                  height={36}
-                  style={{ height: '36px', width: 'auto' }}
+                  width={144} 
+                  height={32}
+                  style={{ height: '32px', width: 'auto' }}
                 />
               </Link>
               <span className="text-sm font-medium text-purple-600 bg-purple-50 px-3 py-1.5 rounded-full flex items-center gap-1.5">
@@ -198,15 +198,15 @@ export default function InterviewPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-          <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="max-w-5xl mx-auto px-4 py-7">
             <div className="flex items-center justify-between">
               <Link href="/">
                 <Image 
                   src="/specifythat-logo.png" 
                   alt="SpecifyThat" 
-                  width={160} 
-                  height={36}
-                  style={{ height: '36px', width: 'auto' }}
+                  width={144} 
+                  height={32}
+                  style={{ height: '32px', width: 'auto' }}
                 />
               </Link>
               <button
@@ -270,13 +270,13 @@ export default function InterviewPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-          <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="max-w-5xl mx-auto px-4 py-7">
             <Image 
               src="/specifythat-logo.png" 
               alt="SpecifyThat" 
-              width={160} 
-              height={36}
-              style={{ height: '36px', width: 'auto' }}
+              width={144} 
+              height={32}
+              style={{ height: '32px', width: 'auto' }}
             />
           </div>
         </header>
@@ -297,14 +297,14 @@ export default function InterviewPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-          <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="max-w-5xl mx-auto px-4 py-7">
             <Link href="/">
               <Image 
                 src="/specifythat-logo.png" 
                 alt="SpecifyThat" 
-                width={160} 
-                height={36}
-                style={{ height: '36px', width: 'auto' }}
+                width={144} 
+                height={32}
+                style={{ height: '32px', width: 'auto' }}
               />
             </Link>
           </div>
@@ -322,13 +322,13 @@ export default function InterviewPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-          <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="max-w-5xl mx-auto px-4 py-7">
             <Image 
               src="/specifythat-logo.png" 
               alt="SpecifyThat" 
-              width={160} 
-              height={36}
-              style={{ height: '36px', width: 'auto' }}
+              width={144} 
+              height={32}
+              style={{ height: '32px', width: 'auto' }}
             />
           </div>
         </header>
@@ -345,14 +345,14 @@ export default function InterviewPage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-          <div className="max-w-5xl mx-auto px-4 py-5">
+          <div className="max-w-5xl mx-auto px-4 py-7">
             <Link href="/">
               <Image 
                 src="/specifythat-logo.png" 
                 alt="SpecifyThat" 
-                width={160} 
-                height={36}
-                style={{ height: '36px', width: 'auto' }}
+                width={144} 
+                height={32}
+                style={{ height: '32px', width: 'auto' }}
               />
             </Link>
           </div>
@@ -403,15 +403,15 @@ export default function InterviewPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
       <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-5">
+        <div className="max-w-5xl mx-auto px-4 py-7">
           <div className="flex items-center justify-between">
             <Link href="/">
               <Image 
                 src="/specifythat-logo.png" 
                 alt="SpecifyThat" 
-                width={160} 
-                height={36}
-                style={{ height: '36px', width: 'auto' }}
+                width={144} 
+                height={32}
+                style={{ height: '32px', width: 'auto' }}
               />
             </Link>
             <button

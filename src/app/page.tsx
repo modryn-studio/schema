@@ -6,13 +6,13 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
       {/* Header */}
       <header className="border-b border-gray-100 bg-white/90 backdrop-blur-md sticky top-0 z-10 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-5">
+        <div className="max-w-5xl mx-auto px-4 py-7">
           <Image 
             src="/specifythat-logo.png" 
             alt="SpecifyThat" 
-            width={160} 
-            height={36}
-            style={{ height: '36px', width: 'auto' }}
+            width={144} 
+            height={32}
+            style={{ height: '32px', width: 'auto' }}
             priority
           />
         </div>
